@@ -1,3 +1,16 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Dong Manh Duc
+ID: 3978290
+Acknowledgement:
+- Hover effect: https://www.youtube.com/watch?v=5DEq5cWNYt8
+- Video gallery in review section (adjustments to work for youtube iframes): https://www.youtube.com/watch?v=z3Y5gJWmVVU&feature=youtu.be
+- Images: https://mangatoday.fun/
+- Youtube videos: @Trash Taste Highlights @LunarEquinox @The Masked Man @AnimeLove. For the video link you can click on the video in the review section
+and navigate to youtube */
+
 * {
     padding: 0px;
     margin: 0px;
@@ -178,6 +191,7 @@ h1 {
     padding-bottom: 3rem;
     font-size: 3rem;
     padding-left: 3rem;
+    transition-duration: 0.5s;
 }
 
 .book-content {
@@ -309,6 +323,7 @@ h1 {
     padding-bottom: 3rem;
     font-size: 3rem;
     padding-left: 3rem;
+    transition-duration: 0.5s;
 }
 
 .manhwa:hover .book-content {
