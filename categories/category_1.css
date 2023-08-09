@@ -1,3 +1,14 @@
+/* RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Dong Manh Duc
+ID: 3978290
+Acknowledgement:
+- Hover effect: https://www.youtube.com/watch?v=5DEq5cWNYt8
+- Images: https://mangatoday.fun/ 
+- Navbar: https://www.youtube.com/watch?v=biOMz4puGt8&t=558s*/
+
 * {
     padding: 0px;
     margin: 0px;
@@ -236,6 +247,10 @@ h1 {
 .category-2:nth-child(3) {
     background-image: url("https://th.bing.com/th/id/R.dc2935d75deeb3bb0e2b7950f6e5b911?rik=0RLiHmrEv7fSjg&pid=ImgRaw&r=0");
     transition-delay: 120ms;
+}
+
+#manga a {
+    text-decoration: none;
 }
 
 /* Footer */

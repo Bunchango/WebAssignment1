@@ -234,21 +234,6 @@ h1 {
     transition-delay: 90ms;
 }
 
-.category-2:nth-child(1) {
-    background-image: url("https://th.bing.com/th/id/OIP.318mLwEOv0sPgJnhE7jgsQHaJ4?pid=ImgDet&rs=1");
-    transition-delay: 60ms;
-}
-
-.category-2:nth-child(2) {
-    background-image: url("https://th.bing.com/th/id/OIP.sLhfXPycis7rs9UAdNkslgHaKF?pid=ImgDet&rs=1");
-    transition-delay: 90ms;
-}
-
-.category-2:nth-child(3) {
-    background-image: url("https://th.bing.com/th/id/R.b76576f79bbf107b658a88122c20e55e?rik=Ne4zXqHqKGjMtw&pid=ImgRaw&r=0");
-    transition-delay: 120ms;
-}
-
 #manga a {
     text-decoration: none;
 }

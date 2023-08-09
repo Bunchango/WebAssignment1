@@ -220,32 +220,18 @@ h1 {
 }
 
 /* Add delay to multiple pages */
-.category-1:nth-child(1) {
-    background-image: url("https://thumb.mghubcdn.com/rem/return-of-the-mount-hua-sect.jpg");
-}
-
-.category-1:nth-child(2) {
-    background-image: url("https://th.bing.com/th/id/R.1d8b5f1309396885e410a0b9a3ed5b54?rik=%2fF1wnH5%2bqt8XlA&pid=ImgRaw&r=0");
-    transition-delay: 30ms;
-}
-
-.category-1:nth-child(3) {
-    background-image: url("https://th.bing.com/th/id/OIP.xYzWNnuQpCijexdM0VX40wAAAA?pid=ImgDet&rs=1");
-    transition-delay: 90ms;
-}
-
 .category-2:nth-child(1) {
-    background-image: url("https://th.bing.com/th/id/OIP.318mLwEOv0sPgJnhE7jgsQHaJ4?pid=ImgDet&rs=1");
+    background-image: url("https://th.bing.com/th/id/R.52ba56a4a89c115d0311d60fe67d1f44?rik=vueAgSj5vRhVYw&pid=ImgRaw&r=0");
     transition-delay: 60ms;
 }
 
 .category-2:nth-child(2) {
-    background-image: url("https://th.bing.com/th/id/OIP.sLhfXPycis7rs9UAdNkslgHaKF?pid=ImgDet&rs=1");
+    background-image: url("https://i.pinimg.com/originals/f4/c7/43/f4c743d2fc501cb628b1a1eb3212eb4c.jpg");
     transition-delay: 90ms;
 }
 
 .category-2:nth-child(3) {
-    background-image: url("https://th.bing.com/th/id/R.b76576f79bbf107b658a88122c20e55e?rik=Ne4zXqHqKGjMtw&pid=ImgRaw&r=0");
+    background-image: url("https://th.bing.com/th/id/R.dc2935d75deeb3bb0e2b7950f6e5b911?rik=0RLiHmrEv7fSjg&pid=ImgRaw&r=0");
     transition-delay: 120ms;
 }
 

@@ -1,4 +1,10 @@
-console.log("reached");
+// RMIT University Vietnam
+// Course: COSC2430 Web Programming
+// Semester: 2023A
+// Assessment: Assignment 1
+// Author: Dong Manh Duc
+// ID: 3978290
+// Acknowledgement: https://www.youtube.com/watch?v=z3Y5gJWmVVU
 
 let videoScroll = document.querySelectorAll(".video-scroll .small-video");
 let mainVideo = document.querySelector(".main-video iframe");

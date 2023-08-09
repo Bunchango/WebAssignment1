@@ -221,32 +221,17 @@ h1 {
 
 /* Add delay to multiple pages */
 .category-1:nth-child(1) {
-    background-image: url("https://thumb.mghubcdn.com/rem/return-of-the-mount-hua-sect.jpg");
+    background-image: url("https://pictures.abebooks.com/isbn/9781421509754-uk.jpg");
 }
 
 .category-1:nth-child(2) {
-    background-image: url("https://th.bing.com/th/id/R.1d8b5f1309396885e410a0b9a3ed5b54?rik=%2fF1wnH5%2bqt8XlA&pid=ImgRaw&r=0");
+    background-image: url("https://th.bing.com/th/id/OIP.BOpWR7j5zUW0fEdhtGtPBQHaKP?pid=ImgDet&rs=1");
     transition-delay: 30ms;
 }
 
 .category-1:nth-child(3) {
-    background-image: url("https://th.bing.com/th/id/OIP.xYzWNnuQpCijexdM0VX40wAAAA?pid=ImgDet&rs=1");
+    background-image: url("https://th.bing.com/th/id/OIP.AbrVHYdht-_ZzBz1g1cadQHaKa?pid=ImgDet&rs=1");
     transition-delay: 90ms;
-}
-
-.category-2:nth-child(1) {
-    background-image: url("https://th.bing.com/th/id/OIP.318mLwEOv0sPgJnhE7jgsQHaJ4?pid=ImgDet&rs=1");
-    transition-delay: 60ms;
-}
-
-.category-2:nth-child(2) {
-    background-image: url("https://th.bing.com/th/id/OIP.sLhfXPycis7rs9UAdNkslgHaKF?pid=ImgDet&rs=1");
-    transition-delay: 90ms;
-}
-
-.category-2:nth-child(3) {
-    background-image: url("https://th.bing.com/th/id/R.b76576f79bbf107b658a88122c20e55e?rik=Ne4zXqHqKGjMtw&pid=ImgRaw&r=0");
-    transition-delay: 120ms;
 }
 
 #manga a {
