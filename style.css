@@ -782,3 +782,8 @@ footer {
     text-decoration: none;
     color: var(--text-primary);
 }
+
+a {
+    text-decoration: none;
+    color: var(--text-primary);
+}

@@ -592,3 +592,8 @@ footer {
         height: 1rem; 
     }
 }
+
+a {
+    text-decoration: none;
+    color: var(--text-primary);
+}

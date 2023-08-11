@@ -623,3 +623,8 @@ footer {
         font-size: 0.7rem
     }
 }
+
+a {
+    text-decoration: none;
+    color: var(--text-primary);
+}

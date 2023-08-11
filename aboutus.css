@@ -3,9 +3,15 @@ Course: COSC2430 Web Programming
 Semester: 2023A
 Assessment: Assignment 1
 Author: Dong Manh Duc
-ID: 3978290 
-Acknowledgement: https://mangatoday.fun/ 
-- Navbar: https://www.youtube.com/watch?v=biOMz4puGt8&t=558s*/
+ID: 3978290
+Acknowledgement:
+- Navbar: https://www.youtube.com/watch?v=biOMz4puGt8&t=558s */
+
+a {
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
 
 * {
     padding: 0px;
@@ -37,6 +43,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -119,14 +126,8 @@ h1 {
 
 .nav-item:last-child {
     margin-left: auto;
-}
-
-
-/* Spacer */
-.spacer {
-    width: 100%;
-    height: 4rem;
-    background: var(--bg-primary);
+    display: flex;
+    flex-direction: column;
 }
 
 /* Show elements when scroll to */
@@ -139,166 +140,58 @@ h1 {
     opacity: 1;
 }
 
-/* Breadcrumb */
-.breadcrumb-container {
+.spacer {
+    width: 100%;
+    height: 4rem;
+}
+
+/* Content */
+.content-container {
     padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-container h1 {
+    font-size: 4.5rem;
     padding-bottom: 1rem;
-    padding-top: 1rem
-}
-
-.breadcrumb {
-    width: 100%;
-    height: 5rem;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    padding-top: 0;
-    background: 2px solid rgba(0, 0, 0, 0.5); 
-}
-
-.path {
-    text-decoration: none;
-    color: var(--red);
-    padding-right: 0.6rem;
-    padding-left: 0.2rem;
-    font-size: 1rem;
-    font-weight: 550;
-    transition-duration: 0.1s;
-}
-
-.path:hover {
-    transform: scale(1.1);
-    color: beige;
-}
-
-/* Buy area */
-.book-container {
-    padding: 5rem;
-    padding-top: 1rem;
-  }
-  
-.buy-area {
-    width: 100%;
-    height: 80vh;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-  
-.main-image {
-    background-image: url("https://thumb.mghubcdn.com/rem/return-of-the-mount-hua-sect.jpg");
-    background-size: cover;
-    border: 1px solid var(--text-primary);
-    border-radius: 1rem;
-    transition: transform 0.3s;
-    height: 100%;
-    width: 100%;
-}
-  
-.main-image:hover {
-    animation: background-blur 0.3s;
-}
-  
-.sub-images {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 1rem;
-}
-  
-.card {
-    background-size: cover;
-    border: 1px solid var(--text-primary);
-    border-radius: 1rem;
-    transition: transform 0.3s;
-    grid-column: 1 / 2;
-    box-shadow: 0px -0.5rem 0.5rem rgba(0, 0, 0, 0.65); 
-}
-  
-.card:nth-child(1) {
-    background-image: url("https://www.wasabith.com/wp-content/uploads/2021/03/Return-of-the-Mountain-Hua-Sect.jpg");
-    grid-row: 1 ;
-}
-  
-.card:nth-child(2) {
-    background-image: url("https://th.bing.com/th/id/R.6fa023715630cfedb632c6c384da19a8?rik=afias21bnUfZiw&pid=ImgRaw&r=0");
-    grid-row: 2 ;
-}
-  
-.card:nth-child(3) {
-    background-image: url("https://media.plawarn-manga.net/public/contents/upload/16677/1.jpg");
-    grid-row: 3 ;
-}
-
-.card:hover {
-    grid-row: 1 / 5;
-    animation: background-blur 0.3s;
-    z-index: 1;
-}  
-
-@keyframes background-blur {
-    from, to {
-        scale: 1;
-    }
-
-    50% {
-        scale: 1.05;
-    }
-}
-
-.buy {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.price-tag {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.price-tag h1 {
-    font-size: 4rem;
-    color: beige;
-}
-
-.price-tag button {
-    width: 5rem;
-    font-size: 2.5rem;
-    aspect-ratio: 2/2;
-    border: 0.5vmin solid var(--red);
-    border-radius: 5rem;
-    cursor: pointer;
-    transition-duration: 0.5s;
-    background-color: var(--bg-primary);
-}
-
-.price-tag button:hover {
-    transform: scale(1.3);
-    background-color: var(--white);
-}
-
-/* Description */
-.description-container {
-    padding: 5rem;
     padding-top: 1rem;
 }
 
-.description {
-    width: 100%;
-    background: var(--bg-secondary);
-    border: 0.5rem solid var(--bg-secondary);
+.content-container p {
+    font-size: 1rem; 
+    padding: 1.5rem;
+    border: 2px solid var(--bg-secondary);
     border-radius: 1rem;
+    background-color: var(--bg-secondary);
 }
 
-.description h1, .description p {
-    padding: 1rem;  
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 }
 
-.description h1 {
-    font-size: 4rem;
+.person img {
+    border-radius: 50%;
+    width: 60%;
+    height: 60%;
+}
+
+.person h2 {
+    display: none;
+    padding-top: 1rem;
+    position: absolute; 
+    bottom: 0;
+    width: 40%; 
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1); 
+}
+
+.person img:hover + h2 {
+    display: block;
 }
 
 /* Footer */
@@ -412,7 +305,29 @@ footer {
     justify-content: center;
 }
 
-/* Media */
+/* Footer media */
+@media (max-width: 870px) {
+    .information {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .web-description {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .information h1 {
+        font-size: 1.5rem;
+    }
+
+    .information a {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 769px) {
     .navbar {
         all: unset;
@@ -423,7 +338,6 @@ footer {
         z-index: 100;
         transition: width 200ms ease;
     }
-
 
     .navbar-nav {
         list-style: none;
@@ -466,31 +380,7 @@ footer {
     }
 }
 
-@media (max-width: 980px) {
-    .buy-area {
-        display: grid;
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 1fr 1fr; 
-        gap: 1rem;
-    }
-
-    .main-image {
-        height: 50vh;
-        grid-row: 1;
-        grid-column: 1;
-    }
-
-    .sub-images {
-        grid-row: 1;
-        grid-column: 2;
-    }
-
-    .buy {
-        grid-row: 2;
-        grid-column: 1;
-    }
-}
-
+/* Footer media */
 @media (max-width: 870px) {
     .information {
         display: grid;
@@ -502,98 +392,23 @@ footer {
     }
 }
 
-@media (max-width: 769px) {
-    .buy-area {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr; 
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        height: 100vh;
+@media (max-width: 768px) {
+
+    .information h1 {
+        font-size: 1.5rem;
     }
 
-    .main-image {
-        grid-row: 1;
-    }
-
-    .sub-images {
-        grid-column: 1;
-        grid-row: 2;
-        grid-template-columns: repeat(3, 1fr); 
-        grid-template-rows: repeat(3, 1fr);
-        gap: 1rem; 
-    }
-
-    .buy {
-        grid-column: 1;
-        grid-row: 3;
-    }
-
-    .card {
-        background-size: cover;
-        border: 1px solid var(--text-primary);
-        border-radius: 1rem;
-        transition: transform 0.3s;
-        box-shadow: 0px -0.5rem 0.5rem rgba(0, 0, 0, 0.65); 
-        height: 30vh;
-    }
-      
-    .card:nth-child(1) {
-        grid-column: 1;
-        grid-row: 1 / 5;
-    }
-      
-    .card:nth-child(2) {
-        grid-column: 2;
-        grid-row: 1 / 5;
-    }
-      
-    .card:nth-child(3) {
-        grid-column: 3;
-        grid-row: 1 / 5;
-    }
-    
-    .card:hover {
-        grid-column: 1 / 5;
-        animation: background-blur 0.3s;
-        z-index: 1;
-    }
-    
-    .description {
-        width: 97%;
+    .information a {
+        font-size: 1rem;
     }
 
     footer {
         padding-right: 1rem;
         padding-left: 1rem;
     }
-
-    .link-text {
-        display: none;
-        margin-left: 0; 
-    }
 }
 
-@media (max-width: 580px) {
-    .buy-area {
-        height: 110vh;
-    }
-
-    .breadcrumb-container {
-        padding: 0.8rem;
-    }
-
-    .book-container {
-        padding: 0.8rem;
-    }
-
-    .description-container {
-        padding: 0.8rem;
-    }
-
-    .description h1 {
-        font-size: 2.3rem;
-    }
-    
+@media (max-width: 375px) {
     footer {
         padding-right: 0.5rem;
         padding-left: 0.5rem;
@@ -612,19 +427,23 @@ footer {
     }
 }
 
-@media (max-width: 375px) {
-    .buy-area {
-        height: 110vh;
+/* Content */
+@media (max-width: 425px) {
+    .content-container {
+        padding: 1rem;
+    }
+
+    .content-container h1 {
+        font-size: 3rem;
     }
 }
 
-@media (max-width: 375px) {
-    .path {
-        font-size: 0.7rem
+@media (max-width: 350px) {
+    .content-container {
+        padding: 0.5rem;
     }
-}
 
-a {
-    text-decoration: none !important;
-    color: var(--text-primary)
+    .content-container h1 {
+        font-size: 2.5rem;
+    }
 }
