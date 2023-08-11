@@ -215,17 +215,17 @@ h1 {
 }
   
 .card:nth-child(1) {
-    background-image: url("https://www.wasabith.com/wp-content/uploads/2021/03/Return-of-the-Mountain-Hua-Sect.jpg");
+    background-image: url("https://asura.gg/wp-content/uploads/2021/03/1-002-28.jpg");
     grid-row: 1 ;
 }
   
 .card:nth-child(2) {
-    background-image: url("https://th.bing.com/th/id/R.6fa023715630cfedb632c6c384da19a8?rik=afias21bnUfZiw&pid=ImgRaw&r=0");
+    background-image: url("https://cdn.sportslumo.com/wp-content/uploads/2023/06/17025610/1-compressed-1-1.jpg");
     grid-row: 2 ;
 }
   
 .card:nth-child(3) {
-    background-image: url("https://media.plawarn-manga.net/public/contents/upload/16677/1.jpg");
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Y2vpcd0dlw1eyawJyqeDIZifuKywT6sVfKQw8U4MLuGJMTF9Jlm-_qai&s=10");
     grid-row: 3 ;
 }
 
